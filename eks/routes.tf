@@ -8,14 +8,14 @@ resource "aws_route_table" "public" {
 
 resource "aws_route" "private_route" {
 
-  route_table_id         = aws_route_table.private
+  route_table_id         = aws_route_table.private.id
   nat_gateway_id         = aws_nat_gateway.nat.id
   destination_cidr_block = "0.0.0.0/0"
 }
 
 resource "aws_route" "public_route" {
 
-  route_table_id         = aws_route_table.public
+  route_table_id         = aws_route_table.public.id
   gateway_id             = aws_internet_gateway.igw.id
   destination_cidr_block = "0.0.0.0/0"
 }
