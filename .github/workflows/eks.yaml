@@ -6,11 +6,11 @@ on:
     branches:
       - main
     paths:
-      - eks/**
+      - /**
   
   pull_request: # [master, next]
     paths:
-      - eks/**
+      - /**
 
 
 jobs:
