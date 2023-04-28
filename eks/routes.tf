@@ -17,6 +17,7 @@ resource "aws_route" "public_route" {
 
   route_table_id = aws_route_table.public
   gateway_id     = aws_internet_gateway.igw.id
+  destination_cidr_block = "0.0.0.0/0"
 }
 
 resource "aws_route_table_association" "private-us-east-1a" {
