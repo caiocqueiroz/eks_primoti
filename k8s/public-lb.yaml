@@ -8,7 +8,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    app: nginx
+    app: webapp-sample
   ports:
     - protocol: TCP
       port: 80
