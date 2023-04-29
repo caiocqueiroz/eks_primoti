@@ -12,9 +12,8 @@ data:
         - system:masters
 kind: ConfigMap
 metadata:
-  annotations:
-  creationTimestamp: "2023-04-28T19:02:25Z"
+  creationTimestamp: "2023-04-29T18:18:32Z"
   name: aws-auth
   namespace: kube-system
-  resourceVersion: "181803"
-  uid: 5f4096ac-de07-4ed0-b8cd-7e6587a829cd
+  resourceVersion: "856"
+  uid: 632c9558-5d4a-4f06-a121-5283d5cfd278
